@@ -265,5 +265,41 @@
     padding-top: calc(var(--header-height) + var(--spacing-md) + 1.5rem) !important;
     padding-bottom: var(--spacing-md) !important;
   }
+
+  /* Center the 3rd bento card when it wraps to the second row (Home 2 and About) */
+  .bento-grid > .bento-card:nth-child(3) {
+    grid-column: 4 / span 6 !important;
+  }
+
+  /* Center the service buttons inside bento cards on tablet view */
+  .bento-card .btn {
+    align-self: center !important;
+  }
+
+  /* Reduce image cropping on the Daylight Studio banner */
+  .about-studio-banner {
+    height: 400px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Make clients brand grid responsive with 2 columns */
+  .clients-brand-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Make clients brand grid responsive with 1 column */
+  .clients-brand-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  /* Reduce image cropping on the Daylight Studio banner for mobile */
+  .about-studio-banner {
+    height: 250px !important;
+  }
 }
 

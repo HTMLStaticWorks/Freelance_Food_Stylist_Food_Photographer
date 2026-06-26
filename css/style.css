@@ -12,6 +12,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
@@ -345,6 +346,8 @@ body.hover-link .custom-cursor-follower {
   flex-direction: column;
   gap: 6px;
   z-index: 1001;
+  padding: 8px; /* Increase click target size for mobile */
+  margin-right: -8px; /* Offset padding to keep visual alignment */
 }
 
 .mobile-nav-toggle span {
@@ -366,6 +369,13 @@ body.hover-link .custom-cursor-follower {
   transform: translateY(-8px) rotate(-45deg);
 }
 
+/* Ensure the 'X' close symbol is visible over the drawer background in light/lite mode */
+body.mobile-menu-active .mobile-nav-toggle span,
+.mobile-nav-toggle.active span,
+.home-header:not(.scrolled) .mobile-nav-toggle.active span {
+  background-color: var(--text-primary) !important;
+}
+
 /* Mobile Drawer Overlay */
 .mobile-drawer {
   position: fixed;
@@ -377,9 +387,11 @@ body.hover-link .custom-cursor-follower {
   z-index: 999;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* Start content from top to prevent cutoff */
   align-items: center;
-  gap: 2.5rem;
+  gap: 1.5rem; /* Slightly reduced gap to fit screens better */
+  padding: 6rem 2rem 3rem 2rem; /* Clear fixed header height and add safe bottom padding */
+  overflow-y: auto; /* Enable vertical scrolling if items overflow */
   transition: var(--transition-smooth);
   visibility: hidden;
 }
@@ -1453,6 +1465,24 @@ section {
 
 [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] h4, [dir="rtl"] p, [dir="rtl"] li {
   text-align: right;
+  direction: ltr !important; /* Keep English text characters running left-to-right to prevent character reversal & punctuation issues */
+}
+
+/* Ensure centered elements/layouts remain centered in RTL mode */
+[dir="rtl"] .text-center,
+[dir="rtl"] .text-center *,
+[dir="rtl"] [style*="text-align: center"],
+[dir="rtl"] [style*="text-align: center"] *,
+[dir="rtl"] .centered,
+[dir="rtl"] .centered * {
+  text-align: center !important;
+  direction: ltr !important;
+}
+
+/* Offset margins for the mobile nav toggle when in RTL mode */
+[dir="rtl"] .mobile-nav-toggle {
+  margin-right: 0;
+  margin-left: -8px; /* Align to the left edge of the padded header */
 }
 
 [dir="rtl"] .section-header {
@@ -1461,7 +1491,7 @@ section {
 }
 
 [dir="rtl"] .section-header-split {
-  flex-direction: row-reverse;
+  /* Natural RTL layout (first child on right, second on left) */
 }
 
 [dir="rtl"] .logo {
@@ -1527,7 +1557,6 @@ section {
 }
 
 [dir="rtl"] .faq-header {
-  flex-direction: row-reverse;
   text-align: right;
 }
 
@@ -2113,13 +2142,15 @@ body.mobile-menu-active .header .nav-controls .theme-toggle {
 
 /* Nav drawer links alignment & vertical centering update */
 .mobile-drawer {
-  padding: var(--header-height) 2rem 2rem 2rem;
+  padding: calc(var(--header-height) + 2rem) 2rem 3rem 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* Prevent vertical cutoff on small viewports */
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem; /* Slightly reduced gap for better mobile fit */
   z-index: 999;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .mobile-drawer .nav-link {
@@ -2140,15 +2171,33 @@ body.mobile-menu-active .header .nav-controls .theme-toggle {
 }
 
 .mobile-drawer .drawer-controls {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
+  padding-bottom: 2rem; /* Add safe space at bottom after controls */
   display: flex;
   gap: 2rem;
   align-items: center;
+  flex-shrink: 0; /* Prevent controls from shrinking */
 }
 
 /* Force editorial tags to use sans-serif, preventing Italiana serif checkmark-like V shape in Volume */
 .section-tag {
   font-family: var(--font-sans) !important;
+}
+
+/* Custom responsive utility classes added for laptop/tablet layouts */
+.about-studio-banner {
+  padding: 0 !important;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  height: 500px;
+}
+
+.clients-brand-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+  align-items: center;
 }
 
 

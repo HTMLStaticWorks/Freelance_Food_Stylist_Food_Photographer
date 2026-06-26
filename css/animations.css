@@ -186,6 +186,11 @@
   display: inline-block;
   overflow: hidden;
   vertical-align: bottom;
+  direction: ltr !important;
+}
+
+.split-text {
+  direction: ltr !important;
 }
 
 .split-char {
