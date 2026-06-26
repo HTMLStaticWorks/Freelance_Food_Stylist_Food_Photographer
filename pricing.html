@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elena Rostova | Pricing & Rate Cards</title>
+  <meta name="description" content="Review editorial and commercial day rates for food styling and photography. Secure custom project quotes.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Outfit:wght@200;400;500;600&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- STICKY HEADER -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 100 100"><path d="M50 0 C45 25 25 45 0 50 C25 55 45 75 50 100 C55 75 75 55 100 50 C75 45 55 25 50 0 Z"/></svg>
+        <span>Rostova</span>
+      </a>
+      
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="clients.html" class="nav-link">Clients</a>
+        <a href="pricing.html" class="nav-link">Rates</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-controls">
+        <button class="dir-toggle" aria-label="Toggle text direction">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M19 8l-4-4v3H5v2h10v3l4-4zM5 16l4 4v-3h10v-2H9v-3l-4 4z"/>
+          </svg>
+        </button>
+        <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
+        <div class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="reading-progress-container">
+      <div class="reading-progress-bar"></div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="home-2.html" class="nav-link">Home 2</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="portfolio.html" class="nav-link">Portfolio</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="clients.html" class="nav-link">Clients</a>
+    <a href="pricing.html" class="nav-link">Rates</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <div class="drawer-controls">
+      <button class="dir-toggle" aria-label="Toggle text direction">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+          <path d="M19 8l-4-4v3H5v2h10v3l4-4zM5 16l4 4v-3h10v-2H9v-3l-4 4z"/>
+        </svg>
+      </button>
+      <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
+    </div>
+  </div>
+
+  <!-- SECTION 1: PRICING HERO -->
+  <section class="hero" style="min-height: 45vh; display: flex; align-items: center; padding-top: var(--spacing-xl); background-color: var(--bg-color-alt);">
+    <div class="container" style="text-align: center;">
+      <span class="section-tag">Rates & Packages</span>
+      <h1 style="font-family: var(--font-serif); font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1.5rem;">Transparent Rates</h1>
+      <p style="max-width: 600px; margin: 0 auto;">Bespoke day rates, licensing models, and prop catalog rentals structured to support publishing houses, agencies, and Michelin chefs.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 2: PHOTOGRAPHY PACKAGES -->
+  <section>
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin: 0 auto var(--spacing-lg) auto;">
+        <span class="section-tag">Photography Rates</span>
+        <h2>Standard Photography Tiers</h2>
+      </div>
+
+      <div class="card-grid stagger-container">
+        <!-- Tier 1 -->
+        <div class="card-item reveal reveal-fade-up">
+          <div>
+            <span class="section-tag" style="font-size:0.75rem;">Editorial Package</span>
+            <h3 style="font-size:2.5rem; margin:1rem 0;">$1,800 <span style="font-size:1rem; font-family:var(--font-sans); color:var(--text-muted); font-weight:400;">/ Day</span></h3>
+            <p>Designed for cookbook publishers, magazine spreads, and chef editorial features.</p>
+            <ul class="card-list">
+              <li>Daylight studio shooting (8 hours)</li>
+              <li>15 high-res retouched images</li>
+              <li>Medium format GFX captures</li>
+              <li>Editorial print licensing rights</li>
+            </ul>
+          </div>
+          <a href="#request-card" class="btn btn-secondary" style="width:100%;">Book Editorial Tier</a>
+        </div>
+
+        <!-- Tier 2 -->
+        <div class="card-item reveal reveal-fade-up" style="border-color:var(--accent-gold); box-shadow:var(--shadow-md);">
+          <div>
+            <span class="section-tag" style="font-size:0.75rem; color:var(--accent-gold);">Commercial & FMCG</span>
+            <h3 style="font-size:2.5rem; margin:1rem 0;">$3,200 <span style="font-size:1rem; font-family:var(--font-sans); color:var(--text-muted); font-weight:400;">/ Day</span></h3>
+            <p>Designed for packaging designs, billboards, and global branding campaigns.</p>
+            <ul class="card-list">
+              <li>Medium format IQ4 150MP capture</li>
+              <li>Studio strobe & light staging</li>
+              <li>20 retouched advertising images</li>
+              <li>Full digital marketing licensing</li>
+            </ul>
+          </div>
+          <a href="#request-card" class="btn btn-gold" style="width:100%;">Book Commercial Tier</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: FOOD STYLING PACKAGES -->
+  <section style="background-color: var(--bg-color-alt);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Styling Rates</span>
+        <h2>Food Styling Solutions</h2>
+      </div>
+
+      <div class="bento-grid">
+        <div class="bento-card bento-span-6 reveal reveal-fade-left">
+          <div>
+            <span class="section-tag">Preparation Day</span>
+            <h3>Prep & Sourcing</h3>
+            <p>For complex packaging campaigns or cookbooks, a preparation day is required to source fresh ingredients, configure props, and complete baking tests.</p>
+            <strong style="font-size:1.5rem; display:block; margin: 1rem 0; color:var(--accent-gold);">$800 / Day + expenses</strong>
+          </div>
+        </div>
+
+        <div class="bento-card bento-span-6 reveal reveal-fade-right">
+          <div>
+            <span class="section-tag">Shooting Day</span>
+            <h3>Active Styling Staging</h3>
+            <p>Elena preps and plates on-set. Standard styling kit includes tweezers, thermals, and raw ingredient staging tools to keep dishes fresh under studio strobes.</p>
+            <strong style="font-size:1.5rem; display:block; margin: 1rem 0; color:var(--accent-gold);">$1,200 / Day</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: COMMERCIAL PRICING DETAILS -->
+  <section>
+    <div class="container">
+      <div class="bento-grid" style="align-items: center;">
+        <div class="bento-card bento-span-6 reveal reveal-fade-left">
+          <span class="section-tag">Licensing Details</span>
+          <h3>Understanding Image Rights</h3>
+          <p>All photography packages include a base editorial license. For heavy print billboard layouts, packaging covers, or long-term global advertising campaigns, we configure custom licensing terms matching your target regions and campaign durations.</p>
+          <p>Day rate quotes exclude custom prop sourcing fees and specialized kitchen assistants if required on-set.</p>
+        </div>
+        <div class="bento-card bento-span-6 reveal reveal-fade-right" style="padding:0; overflow:hidden; border-radius: var(--radius-lg); height:300px;">
+          <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=600&q=80" alt="Commercial styling setup" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: WHAT'S INCLUDED -->
+  <section style="background-color: var(--bg-color-alt);">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin: 0 auto var(--spacing-lg) auto;">
+        <span class="section-tag">Standard Inclusion</span>
+        <h2>What's Included In Rates</h2>
+      </div>
+
+      <div class="reveal reveal-fade-up" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        <div class="bento-card" style="padding: 2rem; border-radius: var(--radius-md);">
+          <h4>High-End Color Staging</h4>
+          <p style="font-size:0.9rem; margin-top:0.5rem; margin-bottom:0; color:var(--text-secondary);">Images are color-calibrated to match global digital print standards.</p>
+        </div>
+        <div class="bento-card" style="padding: 2rem; border-radius: var(--radius-md);">
+          <h4>Prop Catalog Access</h4>
+          <p style="font-size:0.9rem; margin-top:0.5rem; margin-bottom:0; color:var(--text-secondary);">Access to our extensive studio collection of ceramics and vintage silverware.</p>
+        </div>
+        <div class="bento-card" style="padding: 2rem; border-radius: var(--radius-md);">
+          <h4>Advanced Post-Production</h4>
+          <p style="font-size:0.9rem; margin-top:0.5rem; margin-bottom:0; color:var(--text-secondary);">Standard pricing covers dust cleaning and natural contrast grading.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: RATE CARD REQUEST FORM -->
+  <section id="request-card">
+    <div class="container" style="max-width: 700px;">
+      <div class="section-header" style="text-align: center;">
+        <span class="section-tag">Request Info</span>
+        <h2>Request Full Rate Card</h2>
+        <p>Fill out the fields below to receive our complete commercial rate card and pricing brochures instantly.</p>
+      </div>
+
+      <form id="rate-card-form" class="reveal reveal-fade-up" style="background-color: var(--bg-card); border: 1px solid var(--border-light); padding: var(--spacing-md); border-radius: var(--radius-lg);" novalidate>
+        <div class="form-group">
+          <input type="text" id="rate-name" class="form-control" placeholder=" " required>
+          <label for="rate-name" class="form-label">Full Name</label>
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="rate-company" class="form-control" placeholder=" " required>
+          <label for="rate-company" class="form-label">Company Name</label>
+        </div>
+
+        <div class="form-group">
+          <input type="email" id="rate-email" class="form-control" placeholder=" " required>
+          <label for="rate-email" class="form-label">Email Address</label>
+        </div>
+
+        <div class="form-select-group">
+          <label class="form-select-label">Business Type</label>
+          <div class="checkbox-grid">
+            <label class="checkbox-item"><input type="radio" name="business-type" value="Restaurant" checked> Restaurant / Hotel</label>
+            <label class="checkbox-item"><input type="radio" name="business-type" value="Agency"> Ad Agency</label>
+            <label class="checkbox-item"><input type="radio" name="business-type" value="FMCG"> FMCG Brand</label>
+            <label class="checkbox-item"><input type="radio" name="business-type" value="Publisher"> Book Publisher</label>
+          </div>
+        </div>
+
+        <div class="form-select-group">
+          <label class="form-select-label">Interested Services</label>
+          <div class="checkbox-grid">
+            <label class="checkbox-item"><input type="checkbox" name="services" value="Photography"> Photography</label>
+            <label class="checkbox-item"><input type="checkbox" name="services" value="Styling"> Food Styling</label>
+            <label class="checkbox-item"><input type="checkbox" name="services" value="Both" checked> Both Services</label>
+            <label class="checkbox-item"><input type="checkbox" name="services" value="PropRental"> Prop Rental</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="rate-volume" class="form-control" placeholder=" " required>
+          <label for="rate-volume" class="form-label">Expected Shoot Volume (e.g. 10 plates, 3 days)</label>
+        </div>
+
+        <div class="form-group">
+          <textarea id="rate-message" class="form-control" rows="3" placeholder=" " style="resize:none;"></textarea>
+          <label for="rate-message" class="form-label">Additional Project Details</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;" data-magnetic>Submit Rate Card Request</button>
+        <div class="form-message"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- SECTION 7: PRICING FAQ -->
+  <section style="background-color: var(--bg-color-alt);">
+    <div class="container" style="max-width: 900px;">
+      <div class="section-header" style="text-align: center; margin: 0 auto var(--spacing-lg) auto;">
+        <span class="section-tag">Pricing details</span>
+        <h2>Pricing Frequently Asked Questions</h2>
+      </div>
+
+      <div class="reveal reveal-fade-up">
+        <!-- Accordion 1 -->
+        <div class="faq-accordion">
+          <div class="faq-header">
+            <h4 class="faq-title">What expenses are generally excluded from day rates?</h4>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <div class="faq-content">
+              Standard exclusions cover ingredient sourcing costs, specialized background boards custom-manufactured for the shoot, model fees, travel costs, and studio kitchen rental space if we shoot outside our New York location.
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion 2 -->
+        <div class="faq-accordion">
+          <div class="faq-header">
+            <h4 class="faq-title">Do you offer discounts for multi-day cookbook bookings?</h4>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <div class="faq-content">
+              Yes. Cookbooks or large menu shoots requiring 4 or more consecutive shooting days qualify for custom block packages. We outline these options in the pricing brochure.
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion 3 -->
+        <div class="faq-accordion">
+          <div class="faq-header">
+            <h4 class="faq-title">What are the licensing rights included in commercial packages?</h4>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <div class="faq-content">
+              Our standard commercial tier includes perpetual rights for online digital marketing, social feeds, and local print placements. Global billboards and packaging covers require custom licensing quotes.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: BENTO CTA -->
+  <section>
+    <div class="container">
+      <div class="bento-grid">
+        <div class="bento-card bento-span-12 reveal reveal-fade-up" style="background-color: var(--accent-olive-light); border:none; text-align:center; padding: var(--spacing-lg);">
+          <span class="section-tag" style="color:var(--accent-olive);">Custom Quotations</span>
+          <h3 style="color:var(--accent-olive); font-size:2.5rem; margin-top:1rem; margin-bottom:1.5rem;">Have a specialized project format?</h3>
+          <p style="color:var(--text-secondary); max-width:600px; margin:0 auto 2rem auto;">Get in touch directly via our detailed project planner to receive a bespoke styling proposal.</p>
+          <a href="contact.html" class="btn btn-secondary" style="border-color:var(--accent-olive); color:var(--accent-olive); display:inline-flex; align-self:center;">Open Project Planner</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LUXURY FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col-lg">
+          <div class="footer-logo">
+            <svg class="logo-icon" viewBox="0 0 100 100"><path d="M50 0 C45 25 25 45 0 50 C25 55 45 75 50 100 C55 75 75 55 100 50 C75 45 55 25 50 0 Z"/></svg>
+            <span>Rostova</span>
+          </div>
+          <p class="footer-desc">Premium culinary art director, professional food stylist, and commercial photographer crafting organic food stories for global print, editorial magazines, and branding packaging.</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051C.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Behance">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M22 7h-7v1.5h7V7zm-9 3c0-2.73-1.748-4-4.5-4H2v14h6.5c3.273 0 4.5-1.758 4.5-4.5 0-1.446-.316-2.502-1.393-3.09 1.144-.45 1.393-1.708 1.393-2.41zm-8 4.5h2.5c1.438 0 2 .42 2 1.25S9.938 17 8.5 17H5v-4.5zM5 8h2c1.238 0 1.5.39 1.5 1.13S8.238 10.5 7 10.5H5V8zm12.35 2.5c-2.483 0-4.35 1.5-4.35 4.5S14.867 19.5 17.35 19.5c2.316 0 3.738-1.258 4-3.25H19.5c-.172.585-.688 1.25-2.15 1.25-1.572 0-2-1.07-2-1.75h6c.078-2.617-.92-5.25-4-5.25zm-1.85 3.5c0-.68.428-1.75 1.85-1.75s1.85 1.07 1.85 1.75h-3.7z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <div class="footer-title">Pages</div>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="about.html" class="footer-link">About</a>
+            <a href="portfolio.html" class="footer-link">Portfolio</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Studio Location</div>
+          <p style="font-size:0.95rem; color:var(--text-secondary);">12 Vintage Oak Lane,<br>Kitchener Studio District,<br>NY 10013</p>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Hours</div>
+          <p style="font-size:0.95rem; color:var(--text-secondary);">Mon - Fri: 9am - 6pm EST</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Elena Rostova Studio. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- UI FLOATING UTILITIES -->
+  <div class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+  </div>
+
+  <div class="sticky-cta">
+    <a href="contact.html" class="btn btn-sticky">Book Studio</a>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/theme.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- FAQ Accordion Action -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const headers = document.querySelectorAll('.faq-header');
+      headers.forEach(header => {
+        header.addEventListener('click', () => {
+          const parent = header.closest('.faq-accordion');
+          const wasActive = parent.classList.contains('active');
+          
+          document.querySelectorAll('.faq-accordion').forEach(acc => acc.classList.remove('active'));
+          
+          if (!wasActive) {
+            parent.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+/* ==========================================================================
+   RESPONSIVE DESIGN RULES
+   ========================================================================== */
+
+/* 4K Displays & Extra Large Screens (>= 1600px) */
+@media (min-width: 1600px) {
+  .container, .header-container {
+    max-width: 1600px;
+  }
+  
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Large Desktops / Laptops (<= 1200px) */
+@media (max-width: 1200px) {
+  :root {
+    --spacing-xl: 6rem;
+    --spacing-lg: 3rem;
+  }
+  
+  .bento-grid {
+    gap: 1.5rem;
+  }
+}
+
+/* Tablets Landscape & Notebooks (<= 1024px) */
+@media (max-width: 1024px) {
+  :root {
+    --spacing-xl: 5rem;
+    --spacing-lg: 2.5rem;
+    --spacing-md: 1.5rem;
+  }
+
+  /* Navigation Menu collapse */
+  .nav-menu {
+    display: none;
+  }
+  
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  /* Hide header toggles on mobile/tablet (inside mobile drawer instead) */
+  .header .dir-toggle,
+  .header .theme-toggle {
+    display: none;
+  }
+  
+  .header-container {
+    padding: 0 var(--spacing-md);
+  }
+  
+  .bento-card {
+    grid-column: span 6 !important;
+  }
+  
+  .bento-span-12 {
+    grid-column: span 12 !important;
+  }
+
+  .project-modal-container {
+    flex-direction: column;
+    max-width: 600px;
+    max-height: 85vh;
+  }
+
+  .project-modal-left {
+    width: 100%;
+    height: 40%;
+  }
+
+  .project-modal-right {
+    width: 100%;
+    height: 60%;
+    padding: var(--spacing-md);
+  }
+  
+  .footer-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--spacing-md);
+  }
+  
+  .footer-col,
+  .footer-col-lg {
+    grid-column: span 3 !important;
+  }
+
+  /* Center align text and buttons in tab & mobile */
+  .section-header-split {
+    flex-direction: column;
+    align-items: center !important;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  .section-header-split .section-header {
+    text-align: center;
+  }
+  .section-header-split .btn {
+    align-self: center !important;
+  }
+  .bento-card {
+    text-align: center !important;
+    align-items: center !important;
+  }
+  .bento-card-content {
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .bento-card-content .btn {
+    align-self: center !important;
+  }
+  .bento-card-img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .carousel-slide .card-item {
+    text-align: center !important;
+    align-items: center !important;
+  }
+}
+
+/* Card Grid 3rd Card Centering for Tablets */
+@media (max-width: 1024px) and (min-width: 700px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .card-grid > .card-item:nth-child(3):last-child {
+    grid-column: span 2 !important;
+    justify-self: center !important;
+    max-width: calc(50% - 1.25rem) !important;
+  }
+}
+@media (max-width: 699px) {
+  .card-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Tablets Portrait (<= 768px) */
+@media (max-width: 768px) {
+  :root {
+    --spacing-xl: 4rem;
+    --spacing-lg: 2rem;
+    --header-height: 80px;
+  }
+  
+  /* Masonry adjust to 2 columns */
+  .masonry-grid {
+    columns: 2;
+  }
+  
+  .section-header-split {
+    flex-direction: column;
+    align-items: center !important;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .bento-card {
+    grid-column: span 12 !important;
+  }
+  
+  .before-after-slider {
+    aspect-ratio: 4 / 3;
+  }
+  
+  .footer-grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .footer-col, .footer-col-lg {
+    grid-column: span 12 !important;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+}
+
+/* Small Mobile Devices (<= 480px) */
+@media (max-width: 480px) {
+  :root {
+    --spacing-xl: 3rem;
+    --spacing-lg: 1.5rem;
+  }
+  
+  body {
+    font-size: 15px;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .masonry-grid {
+    columns: 1;
+  }
+  
+  .portfolio-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .back-to-top {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .sticky-cta {
+    display: none; /* Hide on extremely small screen to prevent UI overlaps */
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE TABLE ALIGNMENT & SPACING (Category B)
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .awards-table th,
+  .awards-table td {
+    padding: 1.25rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .awards-table th,
+  .awards-table td {
+    padding: 1rem 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .awards-table th,
+  .awards-table td {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+/* Fix Home 2 Editorial Hero Navbar Overlap on Tablet & Mobile Devices (ANTIGRAVITY) */
+@media (max-width: 1024px) {
+  .hero-home2 {
+    display: block !important;
+    min-height: auto !important;
+    padding-top: calc(var(--header-height) + var(--spacing-md) + 1.5rem) !important;
+    padding-bottom: var(--spacing-md) !important;
+  }
+}
+

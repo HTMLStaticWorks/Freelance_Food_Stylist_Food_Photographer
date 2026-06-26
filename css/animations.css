@@ -1,0 +1,248 @@
+/* ==========================================================================
+   KEYFRAMES & UTILITY TRANSITIONS
+   ========================================================================== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideRightFade {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideLeftFade {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes blurToClear {
+  from {
+    filter: blur(20px);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes backgroundZoom {
+  from { transform: scale(1.05); }
+  to { transform: scale(1); }
+}
+
+@keyframes floatIng {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(3deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes floatIngRev {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(12px) rotate(-4deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+/* ==========================================================================
+   SCROLL REVEAL STYLES (Intersection Observer Hooks)
+   ========================================================================== */
+.reveal {
+  opacity: 0;
+  transition: var(--transition-smooth);
+}
+
+.reveal-fade-up {
+  transform: translateY(40px);
+}
+
+.reveal-fade-left {
+  transform: translateX(-40px);
+}
+
+.reveal-fade-right {
+  transform: translateX(40px);
+}
+
+.reveal-scale {
+  transform: scale(0.92);
+}
+
+.reveal-blur {
+  filter: blur(15px);
+}
+
+/* Activated Scroll Reveal */
+.reveal.active {
+  opacity: 1;
+  transform: translate(0) scale(1);
+  filter: blur(0);
+}
+
+/* Stagger Children Utility */
+.stagger-container > *:nth-child(1) { transition-delay: 0.1s; }
+.stagger-container > *:nth-child(2) { transition-delay: 0.2s; }
+.stagger-container > *:nth-child(3) { transition-delay: 0.3s; }
+.stagger-container > *:nth-child(4) { transition-delay: 0.4s; }
+.stagger-container > *:nth-child(5) { transition-delay: 0.5s; }
+.stagger-container > *:nth-child(6) { transition-delay: 0.6s; }
+
+/* ==========================================================================
+   PREMIUM INTERACTIONS
+   ========================================================================== */
+/* Image Mask Reveal */
+.img-mask-reveal {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-mask-reveal::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-gold);
+  transform: translateX(0);
+  transition: transform 0.8s cubic-bezier(0.85, 0, 0.15, 1);
+  z-index: 2;
+}
+
+.img-mask-reveal.active::after {
+  transform: translateX(101%);
+}
+
+/* Zoom Hover */
+.zoom-hover {
+  overflow: hidden;
+}
+
+.zoom-hover img {
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.zoom-hover:hover img {
+  transform: scale(1.08);
+}
+
+/* Floating Ingredients */
+.floating-ingredient-1 {
+  animation: floatIng 7s ease-in-out infinite;
+}
+
+.floating-ingredient-2 {
+  animation: floatIngRev 9s ease-in-out infinite;
+}
+
+/* Glow Border Cards */
+.glow-border {
+  position: relative;
+}
+
+.glow-border::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, var(--accent-gold), transparent, var(--accent-copper));
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.glow-border:hover::before {
+  opacity: 0.6;
+}
+
+/* Split Text / Character reveal */
+.split-char-wrap {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.split-char {
+  display: inline-block;
+  transform: translateY(100%);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active .split-char {
+  transform: translateY(0);
+}
+
+/* 3D Perspective Card Tilt (Triggered via JS) */
+.tilt-card {
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+  transition: transform 0.1s ease;
+}
+
+/* Image Hover Swap Component */
+.hover-swap-wrap {
+  position: relative;
+}
+
+.hover-swap-img-secondary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-swap-wrap:hover .hover-swap-img-secondary {
+  opacity: 1;
+}
+
+/* Curtain Transition Overlay */
+.curtain-reveal-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.curtain-reveal-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--text-primary);
+  z-index: 10;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 0.8s cubic-bezier(0.85, 0, 0.15, 1);
+}
+
+.curtain-reveal-container.active .curtain-reveal-layer {
+  transform: scaleY(0);
+}

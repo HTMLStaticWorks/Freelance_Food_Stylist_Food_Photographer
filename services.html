@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elena Rostova | Studio Services</title>
+  <meta name="description"
+    content="Professional culinary styling and photography packages for high-end food brands, editorial books, and premium restaurant menu relaunches.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Italiana&family=Outfit:wght@200;400;500;600&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="services-page">
+
+  <!-- STICKY HEADER -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 100 100">
+          <path d="M50 0 C45 25 25 45 0 50 C25 55 45 75 50 100 C55 75 75 55 100 50 C75 45 55 25 50 0 Z" />
+        </svg>
+        <span>Rostova</span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="clients.html" class="nav-link">Clients</a>
+        <a href="pricing.html" class="nav-link">Rates</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-controls">
+        <button class="dir-toggle" aria-label="Toggle text direction">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M19 8l-4-4v3H5v2h10v3l4-4zM5 16l4 4v-3h10v-2H9v-3l-4 4z" />
+          </svg>
+        </button>
+        <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
+        <div class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="reading-progress-container">
+      <div class="reading-progress-bar"></div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="home-2.html" class="nav-link">Home 2</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="portfolio.html" class="nav-link">Portfolio</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="clients.html" class="nav-link">Clients</a>
+    <a href="pricing.html" class="nav-link">Rates</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <div class="drawer-controls">
+      <button class="dir-toggle" aria-label="Toggle text direction">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+          <path d="M19 8l-4-4v3H5v2h10v3l4-4zM5 16l4 4v-3h10v-2H9v-3l-4 4z" />
+        </svg>
+      </button>
+      <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
+    </div>
+  </div>
+
+  <!-- SECTION 1: HERO (UNIQUE SERVICES HERO) -->
+  <section class="hero"
+    style="min-height: 45vh; display: flex; align-items: center; padding-top: var(--spacing-xl); background-color: var(--bg-color-alt);">
+    <div class="container" style="text-align: center;">
+      <span class="section-tag">Capabilities</span>
+      <h1 style="font-family: var(--font-serif); font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1.5rem;">Studio
+        Offerings</h1>
+      <p style="max-width: 600px; margin: 0 auto;">From conceptual development to natural-light captures and advanced
+        color retouching. We tailor each project setup to fit your campaign parameters.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 2: FOOD STYLING -->
+  <section>
+    <div class="container">
+      <div class="bento-grid">
+        <div class="bento-card bento-span-4 reveal reveal-fade-left"
+          style="padding:0; overflow:hidden; border-radius: var(--radius-lg); aspect-ratio: 1.2;">
+          <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=400&q=80"
+            alt="Tweezers food arrangement" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+        <div class="bento-card bento-span-8 reveal reveal-fade-right">
+          <div>
+            <span class="section-tag">Direction & Styling</span>
+            <h3>Professional Culinary Styling</h3>
+            <p>We source organic ingredients, arrange complex plates, and apply advanced styling techniques to establish
+              high-end details. We use precise thermal controls and natural sprays to preserve real freshness throughout
+              shooting days, keeping dishes visually stunning without synthetic components.</p>
+          </div>
+          <a href="portfolio.html?filter=restaurants" class="btn btn-secondary" style="align-self:flex-start;">View
+            Plating Styles</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: FOOD PHOTOGRAPHY -->
+  <section style="background-color: var(--bg-color-alt);">
+    <div class="container">
+      <div class="bento-grid">
+        <div class="bento-card bento-span-8 reveal reveal-fade-left">
+          <div>
+            <span class="section-tag">Camera & Strobe Optics</span>
+            <h3>Medium Format Captures</h3>
+            <p>Utilizing high-end Phase One 150MP cameras and Broncolor strobe systems. We configure custom diffuse
+              layouts that mimic natural window lighting to create soft shadows, rendering food colors accurately for
+              heavy printing, packaging, and digital display environments.</p>
+          </div>
+          <a href="portfolio.html?filter=beverages" class="btn btn-secondary" style="align-self:flex-start;">View Light
+            setups</a>
+        </div>
+        <div class="bento-card bento-span-4 reveal reveal-fade-right"
+          style="padding:0; overflow:hidden; border-radius: var(--radius-lg); aspect-ratio: 1.2;">
+          <img
+            src="https://images.stockcake.com/public/c/8/a/c8a959e1-c507-47ae-ad91-9009ef7c1703_large/capturing-food-moments-stockcake.jpg"
+            alt="Professional studio camera details" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: RESTAURANT MENU PHOTOGRAPHY -->
+  <section>
+    <div class="container">
+      <div class="bento-grid">
+        <div class="bento-card bento-span-4 reveal reveal-fade-left"
+          style="padding:0; overflow:hidden; border-radius: var(--radius-lg); aspect-ratio: 1.2;">
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=400&q=80"
+            alt=" Michelin fine dining plates" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+        <div class="bento-card bento-span-8 reveal reveal-fade-right">
+          <div>
+            <span class="section-tag">Menu Launches</span>
+            <h3>Michelin Plated Menus</h3>
+            <p>Designed for premium hospitality. We coordinate with executive chefs on-location to capture seasonal menu
+              releases without interrupting standard service. The photos blend plated close-ups with atmospheric
+              restaurant dining room details.</p>
+          </div>
+          <a href="contact.html" class="btn btn-secondary" style="align-self:flex-start;">Request Restaurant Rates</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: PRODUCT PHOTOGRAPHY -->
+  <section style="background-color: var(--bg-color-alt);">
+    <div class="container">
+      <div class="bento-grid">
+        <div class="bento-card bento-span-8 reveal reveal-fade-left">
+          <div>
+            <span class="section-tag">FMCG & Packaging</span>
+            <h3>Commercial Food Products</h3>
+            <p>High-end packaging assets designed to boost consumer confidence. We focus on ingredient clarity, consistent
+              color spaces, and precise texturing to ensure your yogurt jars, snacks, and meal kits meet strict
+              advertising standards while looking premium.</p>
+          </div>
+          <a href="portfolio.html?filter=fmcg" class="btn btn-secondary" style="align-self:flex-start;">View FMCG
+            Gallery</a>
+        </div>
+        <div class="bento-card bento-span-4 reveal reveal-fade-right"
+          style="padding:0; overflow:hidden; border-radius: var(--radius-lg); aspect-ratio: 1.2;">
+          <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=400&q=80"
+            alt="Artisanal olive oil bottle close up" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: EDITORIAL SHOOTS -->
+  <section>
+    <div class="container">
+      <div class="bento-grid">
+        <div class="bento-card bento-span-4 reveal reveal-fade-left"
+          style="padding:0; overflow:hidden; border-radius: var(--radius-lg); aspect-ratio: 1.2;">
+          <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=400&q=80"
+            alt="Baking pastry setup on table" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+        <div class="bento-card bento-span-8 reveal reveal-fade-right">
+          <div>
+            <span class="section-tag">Cookbooks & Print</span>
+            <h3>Book spreads & Magazine covers</h3>
+            <p>We work directly with publishers and cookbook authors to create cohesive visual directories. We design
+              layouts that support text wrapping, margin boundaries, and premium color palettes matching specific culinary
+              narratives.</p>
+          </div>
+          <a href="portfolio.html?filter=cookbook" class="btn btn-secondary" style="align-self:flex-start;">Explore
+            Cookbook Spreads</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: ADD-ON SERVICES -->
+  <section style="background-color: var(--bg-color-alt);">
+    <div class="container">
+      <div class="bento-grid">
+        <div class="bento-card bento-span-8 reveal reveal-fade-left">
+          <div>
+            <span class="section-tag">Studio Inventory</span>
+            <h3>Prop Sourcing, Rental & Space Hire</h3>
+            <p>Elena Rostova Studio houses a massive catalog of handcrafted styling props, including 500+ ceramic plates,
+              vintage silverware, natural wood slabs, and textured linen textiles, available for shoot rentals. We also
+              rent out our state-of-the-art daylight kitchen workspace for custom chef menu tests.</p>
+          </div>
+          <a href="about.html#studio" class="btn btn-secondary" style="align-self:flex-start;">Browse Prop Archive</a>
+        </div>
+        <div class="bento-card bento-span-4 reveal reveal-fade-right"
+          style="padding:0; overflow:hidden; border-radius: var(--radius-lg); aspect-ratio: 1.2;">
+          <img src="https://images.unsplash.com/photo-1534482421-64566f976cfa?auto=format&fit=crop&w=400&q=80"
+            alt="Kitchen prop table with fresh leaves" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: BOOKING CTA -->
+  <section
+    style="background: linear-gradient(135deg, var(--text-primary), var(--accent-olive)); color: var(--bg-color); padding: var(--spacing-xl) 0;">
+    <div class="container" style="text-align:center; max-width: 800px;">
+      <span class="section-tag" style="color:var(--accent-gold);">Book Studio Session</span>
+      <h2 style="color:var(--bg-color); margin-bottom: 2rem;">Ready to build a culinary campaign?</h2>
+      <p style="color:var(--text-muted); margin-bottom:2.5rem;">Secure your booking slot by filling out our detailed
+        inquiry form or request the complete price rate card.</p>
+      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn-gold">Inquire Now</a>
+        <a href="pricing.html" class="btn btn-secondary"
+          style="border-color:var(--bg-color); color:var(--bg-color);">Rates Sheet</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LUXURY FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col-lg">
+          <div class="footer-logo">
+            <svg class="logo-icon" viewBox="0 0 100 100">
+              <path d="M50 0 C45 25 25 45 0 50 C25 55 45 75 50 100 C55 75 75 55 100 50 C75 45 55 25 50 0 Z" />
+            </svg>
+            <span>Rostova</span>
+          </div>
+          <p class="footer-desc">Premium culinary art director, professional food stylist, and commercial photographer
+            crafting organic food stories for global print, editorial magazines, and branding packaging.</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051C.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Behance">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path
+                  d="M22 7h-7v1.5h7V7zm-9 3c0-2.73-1.748-4-4.5-4H2v14h6.5c3.273 0 4.5-1.758 4.5-4.5 0-1.446-.316-2.502-1.393-3.09 1.144-.45 1.393-1.708 1.393-2.41zm-8 4.5h2.5c1.438 0 2 .42 2 1.25S9.938 17 8.5 17H5v-4.5zM5 8h2c1.238 0 1.5.39 1.5 1.13S8.238 10.5 7 10.5H5V8zm12.35 2.5c-2.483 0-4.35 1.5-4.35 4.5S14.867 19.5 17.35 19.5c2.316 0 3.738-1.258 4-3.25H19.5c-.172.585-.688 1.25-2.15 1.25-1.572 0-2-1.07-2-1.75h6c.078-2.617-.92-5.25-4-5.25zm-1.85 3.5c0-.68.428-1.75 1.85-1.75s1.85 1.07 1.85 1.75h-3.7z" />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path
+                  d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Pages</div>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="about.html" class="footer-link">About</a>
+            <a href="portfolio.html" class="footer-link">Portfolio</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Studio Location</div>
+          <p style="font-size:0.95rem; color:var(--text-secondary);">12 Vintage Oak Lane,<br>Kitchener Studio
+            District,<br>NY 10013</p>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Hours</div>
+          <p style="font-size:0.95rem; color:var(--text-secondary);">Mon - Fri: 9am - 6pm EST</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Elena Rostova Studio. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- UI FLOATING UTILITIES -->
+  <div class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+      <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+    </svg>
+  </div>
+
+  <div class="sticky-cta">
+    <a href="contact.html" class="btn btn-sticky">Book Studio</a>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/theme.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elena Rostova | Editorial Showcase (Home 2)</title>
+  <meta name="description"
+    content="Explore the signature culinary storytelling of Elena Rostova. Food styling and photography featuring before/after showcases and brand campaigns.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Italiana&family=Outfit:wght@200;400;500;600&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- STICKY HEADER -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 100 100">
+          <path d="M50 0 C45 25 25 45 0 50 C25 55 45 75 50 100 C55 75 75 55 100 50 C75 45 55 25 50 0 Z" />
+        </svg>
+        <span>Rostova</span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="clients.html" class="nav-link">Clients</a>
+        <a href="pricing.html" class="nav-link">Rates</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-controls">
+        <button class="dir-toggle" aria-label="Toggle text direction">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M19 8l-4-4v3H5v2h10v3l4-4zM5 16l4 4v-3h10v-2H9v-3l-4 4z" />
+          </svg>
+        </button>
+        <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
+        <div class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="reading-progress-container">
+      <div class="reading-progress-bar"></div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="home-2.html" class="nav-link">Home 2</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="portfolio.html" class="nav-link">Portfolio</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="clients.html" class="nav-link">Clients</a>
+    <a href="pricing.html" class="nav-link">Rates</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <div class="drawer-controls">
+      <button class="dir-toggle" aria-label="Toggle text direction">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+          <path d="M19 8l-4-4v3H5v2h10v3l4-4zM5 16l4 4v-3h10v-2H9v-3l-4 4z" />
+        </svg>
+      </button>
+      <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
+    </div>
+  </div>
+
+  <!-- SECTION 1: EDITORIAL HERO (DIFFERENT HERO DESIGN) -->
+  <section class="hero hero-home2"
+    style="min-height: 90vh; display: flex; align-items: center; background-color: var(--bg-color-alt); padding: calc(var(--header-height) + var(--spacing-md)) 0 var(--spacing-md) 0;">
+    <div class="container">
+      <div class="bento-grid" style="align-items: center;">
+        <div class="bento-card bento-span-6 reveal reveal-fade-left"
+          style="background:none; border:none; box-shadow:none; padding:0;">
+
+          <h1
+            style="font-family: var(--font-serif); font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; margin-bottom: 2rem;">
+            Where Textures Speak & Light Lingers.
+          </h1>
+          <p style="font-size: 1.15rem; max-width: 500px; color: var(--text-secondary); margin-bottom: 2.5rem;">
+            A horizontal journey exploring organic dish layouts, premium color profiles, and culinary art design. Scroll
+            sideways to review featured stories.
+          </p>
+          <div>
+            <a href="#featured-campaign" class="btn btn-primary" data-magnetic>Begin Journey <span
+                class="btn-arrow">&rarr;</span></a>
+          </div>
+        </div>
+        <div class="bento-card bento-span-6 reveal reveal-fade-right"
+          style="background:none; border:none; box-shadow:none; padding:0;">
+          <div
+            style="width: 100%; aspect-ratio: 4 / 5; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg);">
+            <img src="images/home-2/hero.png" alt="Aesthetic gourmet setup"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: FEATURED CAMPAIGN -->
+  <section id="featured-campaign" style="padding-top: var(--spacing-lg);">
+    <div class="container">
+      <div class="bento-grid">
+        <div class="bento-card bento-span-12 reveal reveal-fade-up" style="padding: 0; background-color: transparent;">
+          <div class="bento-card-img"
+            style="height: 500px; margin-bottom: var(--spacing-md); position: relative; border-radius: var(--radius-lg);">
+            <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=1200&q=80"
+              alt="Botanical Cocktail Shoot" style="width: 100%; height: 100%; object-fit: cover;">
+            <div
+              style="position: absolute; bottom: 2rem; left: 2rem; background: rgba(0,0,0,0.6); color: #fff; padding: 1.5rem; border-radius: var(--radius-md); backdrop-filter: blur(10px);">
+              <span class="section-tag" style="color: var(--accent-gold);">Featured Spotlight</span>
+              <h3 style="color: #fff; margin-bottom: 0.5rem;">The Summer Botanical Spirits</h3>
+              <p style="font-size: 0.95rem; margin-bottom: 0; color: #dfd7ce;">Commissioned by Nectar Distillers.
+                Recreating garden morning dew using macro styling.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: PORTFOLIO CATEGORIES (CURSOR PREVIEWS HOVER HOOK) -->
+  <section style="background-color: var(--bg-color-alt);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Categorized Index</span>
+        <h2>Signature Directions</h2>
+        <p>Hover over the categories below to preview our aesthetic styling directions in real-time.</p>
+      </div>
+
+      <div class="reveal reveal-fade-up"
+        style="display:flex; flex-direction:column; border-top: 1px solid var(--border-light);">
+        <!-- Category Row 1 -->
+        <a href="portfolio.html" class="tilt-card"
+          data-cursor-image="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=300&q=80"
+          style="display:flex; justify-content:space-between; align-items:center; padding: 2rem 0; border-bottom: 1px solid var(--border-light); font-size: clamp(1.5rem, 3vw, 2.2rem); font-family: var(--font-serif);">
+          <span>Fine Dining Plating</span>
+          <span style="font-size:1rem; font-family:var(--font-sans); color:var(--accent-gold);">01 / 18 Projects</span>
+        </a>
+        <!-- Category Row 2 -->
+        <a href="portfolio.html" class="tilt-card"
+          data-cursor-image="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=300&q=80"
+          style="display:flex; justify-content:space-between; align-items:center; padding: 2rem 0; border-bottom: 1px solid var(--border-light); font-size: clamp(1.5rem, 3vw, 2.2rem); font-family: var(--font-serif);">
+          <span>Pâtisserie & Desserts</span>
+          <span style="font-size:1rem; font-family:var(--font-sans); color:var(--accent-gold);">02 / 12 Projects</span>
+        </a>
+        <!-- Category Row 3 -->
+        <a href="portfolio.html" class="tilt-card"
+          data-cursor-image="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=300&q=80"
+          style="display:flex; justify-content:space-between; align-items:center; padding: 2rem 0; border-bottom: 1px solid var(--border-light); font-size: clamp(1.5rem, 3vw, 2.2rem); font-family: var(--font-serif);">
+          <span>Artisanal Beverages</span>
+          <span style="font-size:1rem; font-family:var(--font-sans); color:var(--accent-gold);">03 / 09 Projects</span>
+        </a>
+        <!-- Category Row 4 -->
+        <a href="portfolio.html" class="tilt-card"
+          data-cursor-image="https://images.unsplash.com/photo-1511018556340-d16986a1c194?auto=format&fit=crop&w=300&q=80"
+          style="display:flex; justify-content:space-between; align-items:center; padding: 2rem 0; border-bottom: 1px solid var(--border-light); font-size: clamp(1.5rem, 3vw, 2.2rem); font-family: var(--font-serif);">
+          <span>Cookbooks & Editorial</span>
+          <span style="font-size:1rem; font-family:var(--font-sans); color:var(--accent-gold);">04 / 22 Projects</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: SIGNATURE STYLE SPOTLIGHT -->
+  <section>
+    <div class="container">
+      <div class="bento-grid">
+        <div class="bento-card bento-span-4 reveal reveal-fade-left"
+          style="background-color: var(--accent-olive-light); border:none;">
+          <span class="section-tag" style="color:var(--accent-olive);">Core Ethos</span>
+          <h3 style="color:var(--accent-olive); font-size:2.5rem; margin-top:2rem;">Pure Light. No Gimmicks.</h3>
+        </div>
+        <div class="bento-card bento-span-8 reveal reveal-fade-right">
+          <span class="section-tag">Visual Approach</span>
+          <h3>Sculpting with Natural Window Rays</h3>
+          <p style="font-size: 1.15rem; line-height: 1.8;">We believe food looks most delicious when it mimics reality.
+            We avoid artificial blue lights or heavy chemical sprays that strip the organic freshness of ingredients.
+            Instead, we use delicate lighting diffusers, natural shadows, and hand-woven rustic textiles to capture food
+            in its rawest, most high-end context.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: BEFORE / AFTER SLIDER -->
+  <section style="background-color: var(--bg-color-alt);">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin: 0 auto var(--spacing-lg) auto;">
+        <span class="section-tag">Behind the Scenes Magic</span>
+        <h2>Raw vs. Styled Plating</h2>
+        <p>Scrub the slider below to see the dramatic transition from unstyled kitchen ingredients to a completed
+          editorial food composition.</p>
+      </div>
+
+      <div class="reveal reveal-scale" style="max-width: 900px; margin: 0 auto;">
+        <!-- Before/After Slider Container -->
+        <div class="before-after-slider">
+          <!-- Before State (Unstyled/Raw ingredients) -->
+          <div class="slider-img before">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=80"
+              alt="Raw unstyled ingredients">
+          </div>
+          <!-- After State (Beautifully styled plate) -->
+          <div class="slider-img after">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80"
+              alt="Beautifully styled plate">
+          </div>
+          <input type="range" min="0" max="100" value="50" class="slider-input"
+            aria-label="Scrub before and after comparison">
+          <div class="slider-handle"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: RESTAURANT PROJECTS (BENTO LAYOUT) -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Restaurant Campaigns</span>
+        <h2>Michelin Plated Stories</h2>
+      </div>
+
+      <div class="bento-grid stagger-container">
+        <!-- Card 1 -->
+        <div class="bento-card bento-span-4 reveal reveal-fade-up">
+          <div class="bento-card-img">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=400&q=80"
+              alt="Seared lamb plating">
+          </div>
+          <h3>L'Ambroisie Dining</h3>
+          <p style="font-size:0.9rem;">Modern grill styling showcasing rich, savory heat shadows.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="bento-card bento-span-4 reveal reveal-fade-up">
+          <div class="bento-card-img">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=400&q=80"
+              alt="Rustic gourmet dough plating">
+          </div>
+          <h3>The Artisan Bakery</h3>
+          <p style="font-size:0.9rem;">Macro composition capturing crust crispness and organic details.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="bento-card bento-span-4 reveal reveal-fade-up">
+          <div class="bento-card-img">
+            <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&w=400&q=80"
+              alt="Gourmet mocha drip">
+          </div>
+          <h3>Espresso Craft</h3>
+          <p style="font-size:0.9rem;">High-speed shutter droplets capturing steam swirls and foam micro-texture.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: COOKBOOK & FMCG (HORIZONTAL STORYTELLING WHEEL SUPPORTED) -->
+  <section style="background-color: var(--bg-color-alt); overflow: hidden;">
+    <div class="container">
+      <div class="section-header-split">
+        <div class="section-header">
+          <span class="section-tag">Cookbook & FMCG Showcase</span>
+          <h2>Horizontal Narrative</h2>
+          <p>Scroll your mouse-wheel vertically over the slides below to scroll them horizontally.</p>
+        </div>
+      </div>
+
+      <div class="horizontal-scroll-wrapper" style="position: relative; width: 100%;">
+        <button class="scroll-arrow scroll-prev" aria-label="Scroll left">&larr;</button>
+        <button class="scroll-arrow scroll-next" aria-label="Scroll right">&rarr;</button>
+
+        <div class="horizontal-scroll-container reveal reveal-fade-right">
+          <!-- Slide 1 -->
+          <div class="horizontal-slide">
+            <div class="card-item" style="padding: 1.5rem; height: auto;">
+              <div class="card-image-wrap" style="aspect-ratio: 16 / 10; margin-bottom: 1.5rem;">
+                <img src="https://images.unsplash.com/photo-1511018556340-d16986a1c194?auto=format&fit=crop&w=600&q=80"
+                  alt="Cookbook spread 1">
+              </div>
+              <h4>Bread Heritage Vol. 1</h4>
+              <p style="font-size:0.9rem; color:var(--text-muted); margin:0;">Full cookbook styling featuring 45 rustic
+                sourdough captures.</p>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="horizontal-slide">
+            <div class="card-item" style="padding: 1.5rem; height: auto;">
+              <div class="card-image-wrap" style="aspect-ratio: 16 / 10; margin-bottom: 1.5rem;">
+                <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=600&q=80"
+                  alt="Cookbook spread 2">
+              </div>
+              <h4>The French Sommelier</h4>
+              <p style="font-size:0.9rem; color:var(--text-muted); margin:0;">Advertising wine campaign highlighting
+                rich shadows and crystal reflection details.</p>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="horizontal-slide">
+            <div class="card-item" style="padding: 1.5rem; height: auto;">
+              <div class="card-image-wrap" style="aspect-ratio: 16 / 10; margin-bottom: 1.5rem;">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80"
+                  alt="Cookbook spread 3">
+              </div>
+              <h4>Modern Pastry Textures</h4>
+              <p style="font-size:0.9rem; color:var(--text-muted); margin:0;">High-contrast dessert grid emphasizing
+                gold leaf finishes.</p>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="horizontal-slide">
+            <div class="card-item" style="padding: 1.5rem; height: auto;">
+              <div class="card-image-wrap" style="aspect-ratio: 16 / 10; margin-bottom: 1.5rem;">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80"
+                  alt="Cookbook spread 4">
+              </div>
+              <h4>Flame & Sear</h4>
+              <p style="font-size:0.9rem; color:var(--text-muted); margin:0;">Restaurant steakhouse menus styled with
+                high heat wood smoke.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: AWARDS & PUBLICATIONS -->
+  <section>
+    <div class="container">
+      <div class="bento-grid">
+        <div class="bento-card bento-span-4 reveal reveal-fade-left">
+          <span class="section-tag">Achievements</span>
+          <h3>Awards & Recognition</h3>
+          <p>Over the years, our visual work has been recognized globally for its minimalist aesthetic, natural lighting
+            quality, and organic styling fidelity.</p>
+        </div>
+        <div class="bento-card bento-span-8 reveal reveal-fade-right" style="padding: 0; overflow-x: auto;">
+          <table class="awards-table" style="width: 100%; border-collapse: collapse; text-align: left; height: 100%;">
+            <thead>
+              <tr style="border-bottom: 1px solid var(--border-light);">
+                <th style="padding: 1.5rem; font-family: var(--font-serif); font-size: 1.25rem;">Award / Institution
+                </th>
+                <th style="padding: 1.5rem; font-family: var(--font-serif); font-size: 1.25rem;">Recognition / Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid var(--border-light);">
+                <td style="padding: 1.5rem; font-family: var(--font-serif); font-size: 1.25rem;">Saveur Food Photo
+                  Awards</td>
+                <td style="padding: 1.5rem; color: var(--accent-gold);">Best Editorial Photo (2025)</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-light);">
+                <td style="padding: 1.5rem; font-family: var(--font-serif); font-size: 1.25rem;">International
+                  Photography Awards</td>
+                <td style="padding: 1.5rem; color: var(--accent-gold);">Gold in Advertising Food (2024)</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-light);">
+                <td style="padding: 1.5rem; font-family: var(--font-serif); font-size: 1.25rem;">Culinary Stylists Guild
+                  NY</td>
+                <td style="padding: 1.5rem; color: var(--accent-gold);">Outstanding Styling Campaign (2023)</td>
+              </tr>
+              <tr>
+                <td style="padding: 1.5rem; font-family: var(--font-serif); font-size: 1.25rem;">London Food Photo Fest
+                </td>
+                <td style="padding: 1.5rem; color: var(--accent-gold);">First Place Commercial Plating (2022)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: CLIENT REVIEWS (EDITORIAL COLUMNS LAYOUT) -->
+  <section style="background-color: var(--bg-color-alt);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Critique Columns</span>
+        <h2>Client Reviews</h2>
+      </div>
+
+      <div class="card-grid stagger-container">
+        <!-- Review Col 1 -->
+        <div class="card-item reveal reveal-fade-up">
+          <span
+            style="font-size:2rem; font-family:var(--font-serif); color:var(--accent-gold); line-height: 1;">“</span>
+          <p style="font-style: italic; line-height: 1.7;">"The organic staging Elena delivered for our packaging launch
+            set a new standard for our brand. She made our grain bowls look incredibly fresh and natural."</p>
+          <div style="margin-top: 1.5rem;">
+            <strong>Marcus Lindqvist</strong>
+            <span style="display:block; font-size: 0.8rem; color: var(--text-muted);">Marketing Director, NordiGrain
+              Co.</span>
+          </div>
+        </div>
+
+        <!-- Review Col 2 -->
+        <div class="card-item reveal reveal-fade-up">
+          <span
+            style="font-size:2rem; font-family:var(--font-serif); color:var(--accent-gold); line-height: 1;">“</span>
+          <p style="font-style: italic; line-height: 1.7;">"Working in-studio with Elena is a masterclass in details.
+            She manages temperature, herbs wilting, and glass fogging with absolute precision."</p>
+          <div style="margin-top: 1.5rem;">
+            <strong>Claire Vance</strong>
+            <span style="display:block; font-size: 0.8rem; color: var(--text-muted);">Creative lead, Horizon Ad
+              Agency</span>
+          </div>
+        </div>
+
+        <!-- Review Col 3 -->
+        <div class="card-item reveal reveal-fade-up">
+          <span
+            style="font-size:2rem; font-family:var(--font-serif); color:var(--accent-gold); line-height: 1;">“</span>
+          <p style="font-style: italic; line-height: 1.7;">"Elena brought a high-end luxury feel to our restaurant menu
+            that set us apart from local competitors. Exceptional color consistency."</p>
+          <div style="margin-top: 1.5rem;">
+            <strong>Chef Akira Sato</strong>
+            <span style="display:block; font-size: 0.8rem; color: var(--text-muted);">Head Chef, Zen Plated NY</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 10: BOTTOM CTA -->
+  <section style="background-color: var(--text-primary); color: var(--bg-color); padding: var(--spacing-xl) 0;">
+    <div class="container" style="text-align: center; max-width: 800px;">
+      <span class="section-tag" style="color: var(--accent-gold);">Connect Today</span>
+      <h2 style="color: var(--bg-color); margin-bottom: 2rem;">Let's design something organic together.</h2>
+      <p style="color: var(--text-muted); margin-bottom: 2.5rem; font-size:1.15rem;">
+        Get in touch to secure studio booking slot or request custom pricing.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" class="btn btn-gold">Inquire Now</a>
+        <a href="pricing.html" class="btn btn-secondary"
+          style="border-color: var(--bg-color); color: var(--bg-color);">Rates Card</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LUXURY FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col-lg">
+          <div class="footer-logo">
+            <svg class="logo-icon" viewBox="0 0 100 100">
+              <path d="M50 0 C45 25 25 45 0 50 C25 55 45 75 50 100 C55 75 75 55 100 50 C75 45 55 25 50 0 Z" />
+            </svg>
+            <span>Rostova</span>
+          </div>
+          <p class="footer-desc">Premium culinary art director, professional food stylist, and commercial photographer
+            crafting organic food stories for global print, editorial magazines, and branding packaging.</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051C.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Behance">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path
+                  d="M22 7h-7v1.5h7V7zm-9 3c0-2.73-1.748-4-4.5-4H2v14h6.5c3.273 0 4.5-1.758 4.5-4.5 0-1.446-.316-2.502-1.393-3.09 1.144-.45 1.393-1.708 1.393-2.41zm-8 4.5h2.5c1.438 0 2 .42 2 1.25S9.938 17 8.5 17H5v-4.5zM5 8h2c1.238 0 1.5.39 1.5 1.13S8.238 10.5 7 10.5H5V8zm12.35 2.5c-2.483 0-4.35 1.5-4.35 4.5S14.867 19.5 17.35 19.5c2.316 0 3.738-1.258 4-3.25H19.5c-.172.585-.688 1.25-2.15 1.25-1.572 0-2-1.07-2-1.75h6c.078-2.617-.92-5.25-4-5.25zm-1.85 3.5c0-.68.428-1.75 1.85-1.75s1.85 1.07 1.85 1.75h-3.7z" />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path
+                  d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Pages</div>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="about.html" class="footer-link">About</a>
+            <a href="portfolio.html" class="footer-link">Portfolio</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Studio Location</div>
+          <p style="font-size:0.95rem; color:var(--text-secondary);">12 Vintage Oak Lane,<br>Kitchener Studio
+            District,<br>NY 10013</p>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Hours</div>
+          <p style="font-size:0.95rem; color:var(--text-secondary);">Mon - Fri: 9am - 6pm EST</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Elena Rostova Studio. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- UI FLOATING UTILITIES -->
+  <div class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+      <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+    </svg>
+  </div>
+
+  <div class="sticky-cta">
+    <a href="contact.html" class="btn btn-sticky">Book Studio</a>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/theme.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Horizontal Scroll Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.querySelector('.horizontal-scroll-container');
+      const prevBtn = document.querySelector('.scroll-prev');
+      const nextBtn = document.querySelector('.scroll-next');
+
+      if (container) {
+        const scrollAmount = 400; // Scroll amount in pixels
+
+        function updateArrowVisibility() {
+          if (prevBtn) prevBtn.disabled = (container.scrollLeft <= 5);
+          if (nextBtn) {
+            const maxScroll = container.scrollWidth - container.clientWidth;
+            nextBtn.disabled = (container.scrollLeft >= maxScroll - 5);
+          }
+        }
+
+        if (prevBtn) {
+          prevBtn.addEventListener('click', () => {
+            container.scrollBy({
+              left: -scrollAmount,
+              behavior: 'smooth'
+            });
+          });
+        }
+
+        if (nextBtn) {
+          nextBtn.addEventListener('click', () => {
+            container.scrollBy({
+              left: scrollAmount,
+              behavior: 'smooth'
+            });
+          });
+        }
+
+        container.addEventListener('scroll', updateArrowVisibility);
+        window.addEventListener('resize', updateArrowVisibility);
+        setTimeout(updateArrowVisibility, 300);
+      }
+    });
+  </script>
+
+</body>
+
+</html>

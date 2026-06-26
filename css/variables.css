@@ -1,0 +1,96 @@
+/* Typography, Colors, Spacing, and Component Tokens */
+
+:root {
+  /* Fonts */
+  --font-serif: 'Playfair Display', 'Italiana', serif;
+  --font-sans: 'Outfit', 'Inter', sans-serif;
+
+  /* Typography Scale */
+  --font-weight-h1: 580;
+  --font-weight-h2: 560;
+  --font-weight-h3: 540;
+  --font-weight-h4: 500;
+  --font-weight-body: 420;
+  --font-weight-btn: 520;
+  --font-weight-nav: 480;
+
+  /* Animations & Transitions */
+  --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --transition-bounce: all 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  --transition-loader: all 1.2s cubic-bezier(0.85, 0, 0.15, 1);
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+
+  /* Border Radii */
+  --radius-sm: 4px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --radius-round: 50%;
+
+  /* Default Light Theme Palette */
+  --bg-color: #FAF9F6;
+  --bg-color-alt: #F5EBE0;
+  --bg-card: rgba(245, 235, 224, 0.4);
+  --bg-glass: rgba(255, 255, 255, 0.92);
+  --border-glass: rgba(255, 255, 255, 0.3);
+  --border-light: rgba(198, 155, 90, 0.15);
+  
+  --text-primary: #1F1E1C;
+  --text-secondary: #33302C;
+  --text-muted: #625E58;
+  --text-on-dark: #FAF9F6;
+  
+  --accent-gold: #9B7030;
+  --accent-copper: #D4A373;
+  --accent-olive: #4A5340;
+  --accent-olive-light: #E2E7DF;
+
+  /* Shadows */
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.06), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+  --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.04);
+  
+  /* Gradients */
+  --gradient-mesh: radial-gradient(at 0% 0%, rgba(245, 235, 224, 0.5) 0px, transparent 50%),
+                    radial-gradient(at 50% 0%, rgba(212, 163, 115, 0.1) 0px, transparent 50%),
+                    radial-gradient(at 100% 0%, rgba(74, 83, 64, 0.05) 0px, transparent 50%);
+
+  /* Header Height Reference */
+  --header-height: 90px;
+}
+
+/* Dark Theme Overrides */
+[data-theme="dark"] {
+  --bg-color: #0E0D0C;
+  --bg-color-alt: #161514;
+  --bg-card: rgba(22, 21, 20, 0.6);
+  --bg-glass: rgba(14, 13, 12, 0.92);
+  --border-glass: rgba(255, 255, 255, 0.05);
+  --border-light: rgba(198, 155, 90, 0.1);
+  
+  --text-primary: #FAF9F6;
+  --text-secondary: #D9D5CF;
+  --text-muted: #8E8A84;
+  --text-on-dark: #FAF9F6;
+  
+  --accent-gold: #D4A373;
+  --accent-copper: #E9B28D;
+  --accent-olive: #839775;
+  --accent-olive-light: #2A2E2C;
+
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
+  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  
+  --gradient-mesh: radial-gradient(at 0% 0%, rgba(22, 21, 20, 0.8) 0px, transparent 50%),
+                    radial-gradient(at 50% 0%, rgba(212, 163, 115, 0.03) 0px, transparent 50%),
+                    radial-gradient(at 100% 0%, rgba(74, 83, 64, 0.03) 0px, transparent 50%);
+}

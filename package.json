@@ -1,0 +1,10 @@
+{
+  "name": "freelance-food-stylist-portfolio",
+  "version": "1.0.0",
+  "description": "Premium editorial food styling and photography portfolio",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server -p 3000"
+  },
+  "dependencies": {}
+}

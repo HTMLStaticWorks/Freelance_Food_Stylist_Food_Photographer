@@ -1,1 +1,640 @@
-Freelance_Food_Stylist_Food_Photographer
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelance Food Stylist & Food Photographer | Premium Editorial Portfolio</title>
+  <meta name="description" content="Premium editorial food styling and food photography portfolio for luxury restaurants, cookbooks, and global FMCG advertising campaigns by a freelance culinary artist.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Outfit:wght@200;400;500;600&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- LUXURY LOADING SCREEN -->
+  <div id="loader">
+    <div class="loader-brand">Culinary Artistry</div>
+    <div class="loader-counter">0%</div>
+    <div class="loader-bar">
+      <div class="loader-progress"></div>
+    </div>
+  </div>
+
+  <!-- STICKY HEADER -->
+  <header class="header home-header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 100 100"><path d="M50 0 C45 25 25 45 0 50 C25 55 45 75 50 100 C55 75 75 55 100 50 C75 45 55 25 50 0 Z"/></svg>
+        <span>Rostova</span>
+      </a>
+      
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="clients.html" class="nav-link">Clients</a>
+        <a href="pricing.html" class="nav-link">Rates</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-controls">
+        <button class="dir-toggle" aria-label="Toggle text direction">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M19 8l-4-4v3H5v2h10v3l4-4zM5 16l4 4v-3h10v-2H9v-3l-4 4z"/>
+          </svg>
+        </button>
+        <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
+        <div class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="reading-progress-container">
+      <div class="reading-progress-bar"></div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="home-2.html" class="nav-link">Home 2</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="portfolio.html" class="nav-link">Portfolio</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="clients.html" class="nav-link">Clients</a>
+    <a href="pricing.html" class="nav-link">Rates</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <div class="drawer-controls">
+      <button class="dir-toggle" aria-label="Toggle text direction">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+          <path d="M19 8l-4-4v3H5v2h10v3l4-4zM5 16l4 4v-3h10v-2H9v-3l-4 4z"/>
+        </svg>
+      </button>
+      <button class="theme-toggle" aria-label="Toggle dark/light mode"></button>
+    </div>
+  </div>
+
+  <!-- SECTION 1: PREMIUM CINEMATIC HERO -->
+  <section class="hero dark-hero" style="height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 0;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+      <img src="images/home/hero.png" alt="Styled Culinary Plate" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.65);">
+    </div>
+    
+    <!-- Floating Ingredients -->
+    <div class="floating-ingredient-1" style="position: absolute; top: 15%; left: 10%; z-index: 2; width: 80px; opacity: 0.85;">
+      <svg viewBox="0 0 100 100" fill="var(--accent-gold)"><path d="M50 0 C45 25 25 45 0 50 C25 55 45 75 50 100 C55 75 75 55 100 50 C75 45 55 25 50 0 Z"/></svg>
+    </div>
+    <div class="floating-ingredient-2" style="position: absolute; bottom: 20%; right: 15%; z-index: 2; width: 60px; opacity: 0.7;">
+      <svg viewBox="0 0 100 100" fill="var(--accent-copper)"><path d="M50 10 C35 30 10 35 10 50 C10 65 35 70 50 90 C65 70 90 65 90 50 C90 35 65 30 50 10 Z"/></svg>
+    </div>
+
+    <div class="container" style="position: relative; z-index: 3; text-align: center; color: var(--text-on-dark);">
+      <span class="section-tag reveal reveal-fade-up">Food Stylist & Photographer</span>
+      <h1 class="split-text reveal" style="font-family: var(--font-serif); font-size: clamp(2.8rem, 7vw, 6rem); margin-bottom: 2rem; color: var(--text-on-dark);">
+        Crafting Visual Flavors
+      </h1>
+      <p class="reveal reveal-fade-up" style="max-width: 600px; margin: 0 auto 2.5rem auto; font-size: 1.25rem; opacity: 0.9; color: var(--text-on-dark);">
+        A luxury, editorial-grade creative studio for Michelin chefs, global FMCG campaigns, and award-winning cookbooks.
+      </p>
+      <div class="reveal reveal-fade-up" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="portfolio.html" class="btn btn-hero-primary">Explore Works</a>
+        <a href="contact.html" class="btn btn-hero-secondary">Book a Shoot</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: TRUSTED BRANDS LOGO SLIDER -->
+  <div class="logo-slider">
+    <div class="logo-slider-track">
+      <div class="logo-slide">SAVOUR MAG</div>
+      <div class="logo-slide">VINTAGE WINES</div>
+      <div class="logo-slide">LE CROISSANT</div>
+      <div class="logo-slide">MICHELIN GALA</div>
+      <div class="logo-slide">THE ORGANIC LAB</div>
+      <div class="logo-slide">NEST COFFEE</div>
+      <div class="logo-slide">CACAO LUXE</div>
+      <div class="logo-slide">GOLDEN FLOUR</div>
+      <!-- Repeat elements for infinite loop -->
+      <div class="logo-slide">SAVOUR MAG</div>
+      <div class="logo-slide">VINTAGE WINES</div>
+      <div class="logo-slide">LE CROISSANT</div>
+      <div class="logo-slide">MICHELIN GALA</div>
+      <div class="logo-slide">THE ORGANIC LAB</div>
+      <div class="logo-slide">NEST COFFEE</div>
+      <div class="logo-slide">CACAO LUXE</div>
+      <div class="logo-slide">GOLDEN FLOUR</div>
+    </div>
+  </div>
+
+  <!-- SECTION 3: FEATURED PORTFOLIO MASONRY -->
+  <section>
+    <div class="container">
+      <div class="section-header-split">
+        <div class="section-header">
+          <span class="section-tag">Featured Campaigns</span>
+          <h2>Selected Masterpieces</h2>
+        </div>
+        <a href="portfolio.html" class="btn btn-secondary" data-magnetic>View Full Gallery <span class="btn-arrow">&rarr;</span></a>
+      </div>
+
+      <div class="portfolio-grid stagger-container">
+        <!-- Item 1 -->
+        <div class="portfolio-grid-item reveal reveal-fade-up" data-category="fmcg" data-project-id="campaign-1">
+          <div class="portfolio-img-wrap zoom-hover">
+            <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=600&q=80" alt="Artisanal Olive Oil">
+          </div>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div>
+              <span class="section-tag" style="font-size:0.75rem;">FMCG Advertising</span>
+              <h4 style="margin: 0.25rem 0 0 0;">Artisanal Olive Oil</h4>
+            </div>
+            <button class="filter-btn active" data-project-trigger style="padding: 0.4rem 0.8rem; font-size: 0.75rem;">Details</button>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="portfolio-grid-item reveal reveal-fade-up" data-category="beverages" data-project-id="campaign-2">
+          <div class="portfolio-img-wrap zoom-hover">
+            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=600&q=80" alt="Summer Citrus Mixology">
+          </div>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div>
+              <span class="section-tag" style="font-size:0.75rem;">Beverage Styling</span>
+              <h4 style="margin: 0.25rem 0 0 0;">Summer Citrus Gin</h4>
+            </div>
+            <button class="filter-btn active" data-project-trigger style="padding: 0.4rem 0.8rem; font-size: 0.75rem;">Details</button>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="portfolio-grid-item reveal reveal-fade-up" data-category="restaurants" data-project-id="campaign-3">
+          <div class="portfolio-img-wrap zoom-hover">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80" alt="French Bistro Styling">
+          </div>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div>
+              <span class="section-tag" style="font-size:0.75rem;">Fine Dining</span>
+              <h4 style="margin: 0.25rem 0 0 0;">Le Petit French Menu</h4>
+            </div>
+            <button class="filter-btn active" data-project-trigger style="padding: 0.4rem 0.8rem; font-size: 0.75rem;">Details</button>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="portfolio-grid-item reveal reveal-fade-up" data-category="desserts" data-project-id="campaign-4">
+          <div class="portfolio-img-wrap zoom-hover">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" alt="Deconstructed Sweet Treats">
+          </div>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div>
+              <span class="section-tag" style="font-size:0.75rem;">Pâtisserie</span>
+              <h4 style="margin: 0.25rem 0 0 0;">Deconstructed Tarts</h4>
+            </div>
+            <button class="filter-btn active" data-project-trigger style="padding: 0.4rem 0.8rem; font-size: 0.75rem;">Details</button>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="portfolio-grid-item reveal reveal-fade-up" data-category="cookbook" data-project-id="campaign-5">
+          <div class="portfolio-img-wrap zoom-hover">
+            <img src="https://images.unsplash.com/photo-1511018556340-d16986a1c194?auto=format&fit=crop&w=600&q=80" alt="Bread Heritage Boule">
+          </div>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div>
+              <span class="section-tag" style="font-size:0.75rem;">Cookbook Spreads</span>
+              <h4 style="margin: 0.25rem 0 0 0;">Bread Heritage Boule</h4>
+            </div>
+            <button class="filter-btn active" data-project-trigger style="padding: 0.4rem 0.8rem; font-size: 0.75rem;">Details</button>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="portfolio-grid-item reveal reveal-fade-up" data-category="cookbook" data-project-id="campaign-5">
+          <div class="portfolio-img-wrap zoom-hover">
+            <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=600&q=80" alt="Winter Pear Tarts">
+          </div>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div>
+              <span class="section-tag" style="font-size:0.75rem;">Cookbook Spreads</span>
+              <h4 style="margin: 0.25rem 0 0 0;">Winter Pear Tarts</h4>
+            </div>
+            <button class="filter-btn active" data-project-trigger style="padding: 0.4rem 0.8rem; font-size: 0.75rem;">Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: FOOD STYLING SERVICES -->
+  <section style="background-color: var(--bg-color-alt);">
+    <div class="container">
+      <div class="bento-grid">
+        <div class="bento-card bento-span-8 reveal reveal-fade-left">
+          <div class="bento-card-content">
+            <div>
+              <span class="section-tag">Styling Expertise</span>
+              <h3>The Art of Food Styling</h3>
+              <p>Food styling is more than just placing ingredients. It is about understanding the organic chemistry of food under high-intensity photography lights. We hand-select props, curate fabrics, and use specialized food preservation techniques to ensure every ingredient looks raw, appetizing, and editorial-grade.</p>
+            </div>
+            <a href="services.html" class="btn btn-secondary">Learn Styling Techniques</a>
+          </div>
+        </div>
+        <div class="bento-card bento-span-4 reveal reveal-fade-right">
+          <div class="bento-card-img">
+            <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=400&q=80" alt="Food Stylist working on detail">
+          </div>
+          <h4>Tweezers & Textures</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 0;">Meticulous details dictate premium branding layouts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: FOOD PHOTOGRAPHY SERVICES -->
+  <section>
+    <div class="container">
+      <div class="bento-grid">
+        <div class="bento-card bento-span-4 reveal reveal-fade-left">
+          <div class="bento-card-img">
+            <img src="https://images.stockcake.com/public/e/f/f/effd8fb6-5eb1-4376-8609-e76a2004a09f_large/professional-studio-setup-stockcake.jpg" alt="Studio setup lens details">
+          </div>
+          <h4>Lenses & Shutter Sync</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 0;">Phase One cameras and high-speed strobes capture every liquid drop.</p>
+        </div>
+        
+        <div class="bento-card bento-span-8 reveal reveal-fade-right">
+          <div class="bento-card-content">
+            <div>
+              <span class="section-tag">Photography Craft</span>
+              <h3>Luxury Editorial Photography</h3>
+              <p>We work exclusively with medium format cameras and premium macro lenses to deliver extreme image clarity suitable for global print campaigns, cookbooks, and massive billboard advertisements. Our studio uses specialized color-calibrated screens and high-frequency strobes to ensure accurate replication of food colors.</p>
+            </div>
+            <a href="services.html" class="btn btn-secondary">View Gear & Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: CREATIVE PROCESS TIMELINE -->
+  <section style="background-color: var(--bg-color-alt);">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin: 0 auto var(--spacing-lg) auto;">
+        <span class="section-tag">Methodology</span>
+        <h2>How We Work Together</h2>
+      </div>
+
+      <div class="timeline-list centered-timeline reveal reveal-fade-up stagger-container">
+        <div class="timeline-row">
+          <div class="timeline-year">01</div>
+          <div class="timeline-info">
+            <h4>Concept & Moodboard Development</h4>
+            <p>We start by discussing your brand guidelines and generating styling moodboards. We align on color grading, plating props, backgrounds, and specific visual composition rules.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-row">
+          <div class="timeline-year">02</div>
+          <div class="timeline-info">
+            <h4>Sourcing & Preparation</h4>
+            <p>Elena hand-picks organic ingredients, herbs, and unique props from local farms and specialized culinary merchants. Prep lists are set for optimal freshness on shooting day.</p>
+          </div>
+        </div>
+
+        <div class="timeline-row">
+          <div class="timeline-year">03</div>
+          <div class="timeline-info">
+            <h4>Styling, Plating & Lighting</h4>
+            <p>In the kitchen studio, ingredients are prepped and styled. Lights are configured to mimic soft natural window sunlight, establishing soft highlights and premium shadows.</p>
+          </div>
+        </div>
+
+        <div class="timeline-row">
+          <div class="timeline-year">04</div>
+          <div class="timeline-info">
+            <h4>The Capture & Post-Production</h4>
+            <p>Using medium format GFX cameras, plates are shot. Files are checked live on monitors. High-end color grading and retouching preserve food natural realism without looking artificial.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: BEHIND THE SCENES -->
+  <section>
+    <div class="container">
+      <div class="bento-grid">
+        <div class="bento-card bento-span-6 reveal reveal-fade-left">
+          <div class="bento-card-img" style="height: 350px;">
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=600&q=80" alt="Elena arranging styling set">
+          </div>
+          <h3>Elena in the Studio Kitchen</h3>
+          <p>Behind every stunning food photo are hours of styling, temperature controls, and lighting configurations. Here is a glimpse inside our custom-built daylight kitchen studio.</p>
+        </div>
+
+        <div class="bento-card bento-span-6 reveal reveal-fade-right">
+          <div class="bento-card-img" style="height: 350px;">
+            <img src="https://images.unsplash.com/photo-1534482421-64566f976cfa?auto=format&fit=crop&w=600&q=80" alt="Beautiful kitchen studio light">
+          </div>
+          <h3>Natural Light Capture</h3>
+          <p>Our studio features a massive north-facing sky window that provides consistent, soft diffuse lighting all day long—crucial for natural, organic food storytelling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: TESTIMONIALS CAROUSEL -->
+  <section style="background-color: var(--bg-color-alt);">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin: 0 auto var(--spacing-lg) auto;">
+        <span class="section-tag">Testimonials</span>
+        <h2>What Art Directors Say</h2>
+      </div>
+
+      <div class="carousel-container reveal reveal-fade-up">
+        <button class="carousel-arrow carousel-prev" aria-label="Previous slide">&larr;</button>
+        <button class="carousel-arrow carousel-next" aria-label="Next slide">&rarr;</button>
+        <div class="carousel-track-wrapper">
+          <div class="carousel-track" id="testimonials-track">
+          <!-- Slide 1 -->
+          <div class="carousel-slide">
+            <div class="card-item glass-card" style="padding: 2.5rem;">
+              <span class="section-tag" style="font-size:1.5rem; line-height:1;">“</span>
+              <p style="font-style: italic; font-size:1.1rem; line-height: 1.7; margin-bottom: 2rem;">"Elena's food styling is unmatched. She understands texture like no one else. The photos from our organic olive oil campaign helped double our online bookings in less than three months."</p>
+              <div>
+                <strong style="display:block; font-size:1rem;">Sophie Moretti</strong>
+                <span style="font-size:0.8rem; color:var(--text-muted);">Art Director, Gourmet Living Mag</span>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-slide">
+            <div class="card-item glass-card" style="padding: 2.5rem;">
+              <span class="section-tag" style="font-size:1.5rem; line-height:1;">“</span>
+              <p style="font-style: italic; font-size:1.1rem; line-height: 1.7; margin-bottom: 2rem;">"We worked with Elena on our rebranding menu photography. Her attention to detail under strobes and her organic lighting setup created exactly the premium vibe we wanted."</p>
+              <div>
+                <strong style="display:block; font-size:1rem;">Chef Jean-Pierre</strong>
+                <span style="font-size:0.8rem; color:var(--text-muted);">Executive Owner, Le Petit Bistro</span>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-slide">
+            <div class="card-item glass-card" style="padding: 2.5rem;">
+              <span class="section-tag" style="font-size:1.5rem; line-height:1;">“</span>
+              <p style="font-style: italic; font-size:1.1rem; line-height: 1.7; margin-bottom: 2rem;">"Her pastry styling is a work of art. She brought a high-fashion editorial look to our cookbook. Absolute professional to work with from concept to delivery."</p>
+              <div>
+                <strong style="display:block; font-size:1rem;">David Carter</strong>
+                <span style="font-size:0.8rem; color:var(--text-muted);">Creative Publisher, Epure Press</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="carousel-nav">
+          <span class="carousel-dot active" data-slide="0"></span>
+          <span class="carousel-dot" data-slide="1"></span>
+          <span class="carousel-dot" data-slide="2"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: INSTAGRAM FEED PREVIEW -->
+  <section>
+    <div class="container">
+      <div class="section-header-split">
+        <div class="section-header">
+          <span class="section-tag">Social Grid</span>
+          <h2>Aesthetic Snippets</h2>
+        </div>
+        <a href="https://instagram.com" target="_blank" class="btn btn-secondary">Follow @ElenaFoodArt</a>
+      </div>
+
+      <div class="card-grid stagger-container">
+        <div class="card-item reveal reveal-scale" style="padding: 0; overflow:hidden;">
+          <div class="card-image-wrap zoom-hover" style="margin-bottom:0; aspect-ratio:1;">
+            <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&w=500&q=80" alt="Mocha latte splash">
+          </div>
+        </div>
+        <div class="card-item reveal reveal-scale" style="padding: 0; overflow:hidden;">
+          <div class="card-image-wrap zoom-hover" style="margin-bottom:0; aspect-ratio:1;">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=500&q=80" alt="Pastry frosting close-up">
+          </div>
+        </div>
+        <div class="card-item reveal reveal-scale" style="padding: 0; overflow:hidden;">
+          <div class="card-image-wrap zoom-hover" style="margin-bottom:0; aspect-ratio:1;">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=500&q=80" alt="Herb seasonings on beef">
+          </div>
+        </div>
+        <div class="card-item reveal reveal-scale" style="padding: 0; overflow:hidden;">
+          <div class="card-image-wrap zoom-hover" style="margin-bottom:0; aspect-ratio:1;">
+            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=500&q=80" alt="Wine glass natural illumination">
+          </div>
+        </div>
+        <div class="card-item reveal reveal-scale" style="padding: 0; overflow:hidden;">
+          <div class="card-image-wrap zoom-hover" style="margin-bottom:0; aspect-ratio:1;">
+            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=500&q=80" alt="Fresh figs salad close-up">
+          </div>
+        </div>
+        <div class="card-item reveal reveal-scale" style="padding: 0; overflow:hidden;">
+          <div class="card-image-wrap zoom-hover" style="margin-bottom:0; aspect-ratio:1;">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=500&q=80" alt="Strawberry pastry close-up">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 10: PREMIUM CTA BANNER -->
+  <section style="background: linear-gradient(135deg, var(--bg-color-alt), var(--accent-olive-light)); padding: var(--spacing-xl) 0;">
+    <div class="container" style="text-align: center; max-width: 900px;">
+      <span class="section-tag reveal reveal-fade-up">Let's Collaborate</span>
+      <h2 class="reveal reveal-fade-up" style="margin-bottom: 2rem;">Ready to elevate your culinary brand imagery?</h2>
+      <p class="reveal reveal-fade-up" style="max-width: 600px; margin: 0 auto 2.5rem auto;">
+        Whether you are a Michelin-starred restaurant launching a new menu, or an advertising agency directing an FMCG campaign, we provide tailored culinary styling and premium captures.
+      </p>
+      <div class="reveal reveal-fade-up" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+        <a href="pricing.html" class="btn btn-secondary">Request Rate Card</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LUXURY FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col-lg">
+          <div class="footer-logo">
+            <svg class="logo-icon" viewBox="0 0 100 100"><path d="M50 0 C45 25 25 45 0 50 C25 55 45 75 50 100 C55 75 75 55 100 50 C75 45 55 25 50 0 Z"/></svg>
+            <span>Rostova</span>
+          </div>
+          <p class="footer-desc">Premium culinary art director, professional food stylist, and commercial photographer crafting organic food stories for global print, editorial magazines, and branding packaging.</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051C.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Behance">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M22 7h-7v1.5h7V7zm-9 3c0-2.73-1.748-4-4.5-4H2v14h6.5c3.273 0 4.5-1.758 4.5-4.5 0-1.446-.316-2.502-1.393-3.09 1.144-.45 1.393-1.708 1.393-2.41zm-8 4.5h2.5c1.438 0 2 .42 2 1.25S9.938 17 8.5 17H5v-4.5zM5 8h2c1.238 0 1.5.39 1.5 1.13S8.238 10.5 7 10.5H5V8zm12.35 2.5c-2.483 0-4.35 1.5-4.35 4.5S14.867 19.5 17.35 19.5c2.316 0 3.738-1.258 4-3.25H19.5c-.172.585-.688 1.25-2.15 1.25-1.572 0-2-1.07-2-1.75h6c.078-2.617-.92-5.25-4-5.25zm-1.85 3.5c0-.68.428-1.75 1.85-1.75s1.85 1.07 1.85 1.75h-3.7z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <div class="footer-title">Pages</div>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="about.html" class="footer-link">About</a>
+            <a href="portfolio.html" class="footer-link">Portfolio</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Studio Location</div>
+          <p style="font-size:0.95rem; color:var(--text-secondary);">12 Vintage Oak Lane,<br>Kitchener Studio District,<br>NY 10013</p>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Hours</div>
+          <p style="font-size:0.95rem; color:var(--text-secondary);">Mon - Fri: 9am - 6pm EST</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Elena Rostova Studio. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- UI FLOATING UTILITIES -->
+  <div class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+  </div>
+
+  <div class="sticky-cta">
+    <a href="contact.html" class="btn btn-sticky">Book Studio</a>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/theme.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Carousel Script for Testimonials -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const track = document.getElementById('testimonials-track');
+      const dots = document.querySelectorAll('.carousel-dot');
+      const prevBtn = document.querySelector('.carousel-prev');
+      const nextBtn = document.querySelector('.carousel-next');
+      
+      if (track) {
+        let currentIndex = 0;
+        const slides = track.querySelectorAll('.carousel-slide');
+        const totalSlides = slides.length;
+        
+        function getVisibleSlidesCount() {
+          if (window.innerWidth >= 1024) return 3;
+          if (window.innerWidth >= 768) return 2;
+          return 1;
+        }
+        
+        function updateCarousel() {
+          const visibleSlides = getVisibleSlidesCount();
+          const maxIndex = Math.max(0, totalSlides - visibleSlides);
+          if (currentIndex > maxIndex) currentIndex = maxIndex;
+          if (currentIndex < 0) currentIndex = 0;
+          
+          // Calculate scroll offset based on slide width
+          const slideWidth = slides[0].getBoundingClientRect().width;
+          const gap = parseFloat(window.getComputedStyle(track).gap) || 0;
+          const offset = currentIndex * (slideWidth + gap);
+          
+          track.style.transform = `translateX(-${offset}px)`;
+          
+          // Update dots
+          dots.forEach((dot, idx) => {
+            if (idx === currentIndex) {
+              dot.classList.add('active');
+            } else {
+              dot.classList.remove('active');
+            }
+            
+            // Hide dots that are out of bounds
+            if (idx > maxIndex) {
+              dot.style.display = 'none';
+            } else {
+              dot.style.display = '';
+            }
+          });
+          
+          // Update arrow states
+          if (prevBtn) prevBtn.disabled = (currentIndex === 0);
+          if (nextBtn) nextBtn.disabled = (currentIndex === maxIndex);
+        }
+        
+        if (dots.length > 0) {
+          dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+              currentIndex = parseInt(dot.getAttribute('data-slide'), 10);
+              updateCarousel();
+            });
+          });
+        }
+        
+        if (prevBtn) {
+          prevBtn.addEventListener('click', () => {
+            currentIndex--;
+            updateCarousel();
+          });
+        }
+        
+        if (nextBtn) {
+          nextBtn.addEventListener('click', () => {
+            currentIndex++;
+            updateCarousel();
+          });
+        }
+        
+        window.addEventListener('resize', updateCarousel);
+        setTimeout(updateCarousel, 300); // Wait for DOM layout
+      }
+    });
+  </script>
+</body>
+</html>
